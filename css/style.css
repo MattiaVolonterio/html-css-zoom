@@ -1,0 +1,36 @@
+:root {
+  --header-height: 100px;
+  --footer-height: 100px;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+  height: var(--header-height);
+  /* debug */
+  background-color: blue;
+}
+
+/* MAIN */
+
+.wrapper {
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+
+  background-color: grey;
+}
+
+/* FOOTER */
+
+footer {
+  height: var(--footer-height);
+
+  background-color: #222222;
+}
