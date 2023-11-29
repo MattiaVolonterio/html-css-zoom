@@ -19,10 +19,26 @@ header {
   background-color: blue;
 }
 
+.button-container {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.button-container button {
+  background-color: #4a4a4a;
+  color: #fefefe;
+  margin-top: 5px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border-style: none;
+}
+
 /* MAIN */
 
 .wrapper {
   height: calc(100vh - var(--header-height) - var(--footer-height));
+
+  overflow: hidden;
 
   background-color: grey;
 }
