@@ -31,9 +31,6 @@ li {
   width: 90%;
   margin: 0 auto;
   padding: 0 20px;
-
-  /* debug */
-  background-color: antiquewhite;
 }
 
 .green-button {
@@ -67,31 +64,24 @@ header {
 .wrapper {
   height: calc(100vh - var(--header-height) - var(--footer-height));
 
-  overflow: hidden;
+  overflow: auto;
 
-  background-color: grey;
+  background-color: #0e0e0e;
 }
 
 .webcam-container {
-  height: calc(100vh - var(--header-height) - var(--footer-height));
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 5px;
+  column-gap: 10px;
   row-gap: 10px;
 
-  padding: 50px 0;
-
-  overflow: scroll;
+  padding: 15px 0 50px 0;
 }
 
 .webcam {
-  width: calc(100% / 7 - 5px);
+  width: calc(100% / 7 - 10px);
   min-width: 200px;
-
-  /* debug */
-  background-color: coral;
-  /* height: 150px; */
 }
 
 .webcam-image {
