@@ -20,6 +20,11 @@ img {
   max-width: 100%;
 }
 
+li {
+  list-style: none;
+  display: inline-block;
+}
+
 /* UTILS */
 
 .container {
@@ -30,6 +35,10 @@ img {
   /* debug */
   background-color: antiquewhite;
   /* min-height: 100px; */
+}
+
+.green-button {
+  color: #4cc703;
 }
 
 /* HEADER */
@@ -107,24 +116,58 @@ header {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   background-color: #222222;
 }
 
+.button-with-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.button-plane,
+.button-menu {
+  background-color: inherit;
+  color: white;
+  padding: 10px 0;
+  border-style: none;
+}
+
+.button-plane {
+  text-align: center;
+  padding-right: 7px;
+  margin-left: 10px;
+}
+
+.button-icon {
+  font-size: 2rem;
+}
+
+.button-menu {
+  font-size: 0.7rem;
+}
+
 .option-button {
+  display: flex;
   /* debug */
-  background-color: antiquewhite;
-  min-width: 100px;
+  /* background-color: antiquewhite;
+  min-width: 100px; */
 }
 
 .nav-button {
   /* debug */
-  background-color: antiquewhite;
-  min-width: 100px;
+  /* background-color: antiquewhite;
+  min-width: 100px; */
 }
 
 .end-meeting {
+  line-height: var(--footer-height);
+  color: red;
+  font-size: 0.85rem;
+
+  padding: 0 20px;
+  background-color: #4a4a4a;
   /* debug */
-  background-color: antiquewhite;
-  min-width: 100px;
+  /* min-width: 100px; */
 }
