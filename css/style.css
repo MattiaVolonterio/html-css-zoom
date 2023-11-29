@@ -15,6 +15,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* UTILS */
 
 .container {
@@ -73,10 +78,13 @@ header {
   width: calc(100% / 7 - 5px);
   min-width: 200px;
 
-  position: relative;
   /* debug */
   background-color: coral;
-  height: 150px;
+  /* height: 150px; */
+}
+
+.webcam-image {
+  position: relative;
 }
 
 .mic-status {
@@ -89,13 +97,34 @@ header {
   font-size: 0.75rem;
   color: white;
   padding: 5px 8px;
-  backdrop-filter: brightness(80%);
+  backdrop-filter: brightness(70%);
 }
 
 /* FOOTER */
 
-footer {
+.footer {
   height: var(--footer-height);
 
+  display: flex;
+  justify-content: space-between;
+
   background-color: #222222;
+}
+
+.option-button {
+  /* debug */
+  background-color: antiquewhite;
+  min-width: 100px;
+}
+
+.nav-button {
+  /* debug */
+  background-color: antiquewhite;
+  min-width: 100px;
+}
+
+.end-meeting {
+  /* debug */
+  background-color: antiquewhite;
+  min-width: 100px;
 }
