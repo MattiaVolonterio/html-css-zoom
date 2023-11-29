@@ -1,6 +1,6 @@
 :root {
   --header-height: 60px;
-  --footer-height: 100px;
+  --footer-height: 90px;
 }
 
 /* RESET */
@@ -30,7 +30,6 @@ li {
 .container {
   width: 90%;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .green-button {
@@ -57,6 +56,8 @@ header {
   padding: 7px 7px;
   border-radius: 5px;
   border-style: none;
+
+  cursor: pointer;
 }
 
 /* MAIN */
@@ -74,7 +75,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 10px;
-  row-gap: 10px;
+  row-gap: 20px;
 
   padding: 15px 0 50px 0;
 }
@@ -98,7 +99,7 @@ header {
   font-size: 0.75rem;
   color: white;
   padding: 5px 8px;
-  backdrop-filter: brightness(70%);
+  backdrop-filter: brightness(50%);
 }
 
 /* FOOTER */
@@ -124,6 +125,8 @@ header {
   color: white;
   padding: 10px 0;
   border-style: none;
+
+  cursor: pointer;
 }
 
 .button-plane {
@@ -151,4 +154,6 @@ header {
 
   padding: 0 20px;
   background-color: #4a4a4a;
+
+  cursor: pointer;
 }
