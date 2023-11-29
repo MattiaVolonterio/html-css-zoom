@@ -34,7 +34,6 @@ li {
 
   /* debug */
   background-color: antiquewhite;
-  /* min-height: 100px; */
 }
 
 .green-button {
@@ -74,6 +73,7 @@ header {
 }
 
 .webcam-container {
+  height: calc(100vh - var(--header-height) - var(--footer-height));
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -81,6 +81,8 @@ header {
   row-gap: 10px;
 
   padding: 50px 0;
+
+  overflow: scroll;
 }
 
 .webcam {
@@ -150,15 +152,6 @@ header {
 
 .option-button {
   display: flex;
-  /* debug */
-  /* background-color: antiquewhite;
-  min-width: 100px; */
-}
-
-.nav-button {
-  /* debug */
-  /* background-color: antiquewhite;
-  min-width: 100px; */
 }
 
 .end-meeting {
@@ -168,6 +161,4 @@ header {
 
   padding: 0 20px;
   background-color: #4a4a4a;
-  /* debug */
-  /* min-width: 100px; */
 }
