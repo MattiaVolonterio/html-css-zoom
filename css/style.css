@@ -1,5 +1,5 @@
 :root {
-  --header-height: 100px;
+  --header-height: 60px;
   --footer-height: 100px;
 }
 
@@ -11,24 +11,28 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* HEADER */
 
 header {
   height: var(--header-height);
-  /* debug */
-  background-color: blue;
+
+  background-color: #0e0e0e;
 }
 
 .button-container {
   text-align: right;
-  padding-right: 5px;
 }
 
 .button-container button {
   background-color: #4a4a4a;
   color: #fefefe;
-  margin-top: 5px;
-  padding: 5px 5px;
+  font-size: 0.8rem;
+  margin: 8px 5px 0 0;
+  padding: 7px 7px;
   border-radius: 5px;
   border-style: none;
 }
